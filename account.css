@@ -1,0 +1,9 @@
+div{
+  margin-left: 600px;
+}body{
+  background-color: white;
+  background-image: url("Bank.jpg");
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+      <script src="signup.js"></script>
+    <style>
+
+	form
+	{
+	max-width:650px;
+	background:rgba(19,35,47,0.5);
+    margin-left:25%;
+
+	margin-right:25%;
+	border-radius:5px;
+
+	}
+
+	 body
+	 {
+	  background-color:#728456;
+	}
+	 th
+	 {
+	  font-size:40px;
+
+	 }
+	 td
+	 {
+	 font-size:20px;
+	 }
+	 input
+	 {
+	 padding:5px;
+	 border-radius:5px;
+
+	 }.submit{
+	 border: none;
+	outline:none;
+	height:40px;
+	background:lightgray;
+	color: black;
+	font-size:18px;
+	border-radius: 20px;
+	 padding:6px 60px 6px 60px;
+	 font-size:20px;}
+	 .submit:hover{
+	cursor: pointer;
+
+	background:#ffc107;
+	color:#000;
+}
+
+
+	</style>
+   <title>
+   Sign up
+   </title>
+  </head>
+  <body>
+    <form>
+	 <table cellpadding="20">
+	  <th colspan="2">
+	  Sign Up
+	  </th>
+	  <tr>
+	  <td>Name</td>
+	  <td> <input type="text" id="name"size="60">
+	  <tr>
+	  <tr>
+	  <td>Email_id</td>
+	  <td> <input type="text" id="emailid"size="60">
+	  </tr>
+	  <tr>
+	  <td>deposit money in current account</td>
+	  <td> <input type="Number"id="currentAccountBalance" size="60">
+	  </tr>
+    <td>deposit money in saving account</td>
+	  <td> <input type="number" id="creditAccountBalance"size="60">
+	  </tr>
+
+	  <td>Password</td>
+	  <td> <input type="password" id="password"size="60">
+	  </tr>
+	  <th colspan="2">
+	  <button type="button" onclick="createUsers()">register</button>
+	  </th>
+	  </tr>
+
+	 </table>
+	</form>
+  </body>
+ </html>

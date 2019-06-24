@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+<table class="table table-striped" id ="table">
+  <thead  class="thead-dark">
+    <tr>
+      <th scope="col">Transaction Date</th>
+      <th scope="col">Transaction detail</th>
+      <th scope="col">withdrawal</th>
+      <th scope="col">Deposited</th>
+        <th scope="col">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+  <script>
+  var userKey = JSON.parse(localStorage.getItem("username"));
+  var userData = JSON.parse(localStorage.getItem(userKey));
+var data = userData["currentAccountSummary"];
+var totalRows = data.length;
+var cellsInRow = 5;
+  for (var r = 0; r < totalRows; r++) {
+      var row = document.createElement("tr");
+
+ // create cells in row
+       for (var c = 0; c < cellsInRow; c++) {
+          var cell = document.createElement("td");
+
+          var cellText = document.createTextNode(data[r][c]);
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+      }
+      document.getElementById("table").appendChild(row);
+
+    }
+    </script>
+  </tbody>
+  </table>
+
+
+
+
+</body>
+</html>

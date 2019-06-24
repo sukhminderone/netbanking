@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="account.js"></script>
+  <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+<body>
+  <div>
+  <form name ="myForm">
+
+    <h1 id="heading">welcome</h1>
+    <h1>Transfer funds</h1><br>
+    <h2>From</h2>
+    <select name="fromAccount" id="selector1"   onchange="jsFunction(this.value);">
+    <option value="currentAccount">Current Account</option>
+    <option value="creditAccount">Credit Account</option>
+  </select>
+  <h1>To</h2>
+  <select name="toAccount" id="selector2" >
+  <option value="currentAccount">Current Account</option>
+  <option value="creditAccount">Credit Account</option>
+
+</select>
+<br>
+<br>
+
+  <p id="currentBalance"> Current balance: </p>
+    <br>
+
+
+    Amount:<br>
+    <input type="text" id="amountTransferred">
+    <br>
+
+    Email :<br>
+    <input type="text" id="email">
+    <br>
+
+  <p type="text" id="remainingBalance"> Remaining balance:<p>
+    <button type="button" onclick="transferFund();"> Transfer funds </button>
+  </form>
+</div>
+
+</body>
+</html>

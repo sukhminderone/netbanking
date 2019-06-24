@@ -1,0 +1,34 @@
+.menubtn {
+    background-color:blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.menu {
+
+    display: inline-block;
+}
+.menu-content {
+    display: none;
+    background-color: white;
+    min-width: 100px;
+
+
+}
+
+.menu-content a {
+    color: black;
+    display: block;
+}
+
+.menu-content a:hover {background-color: white;}
+
+.menu:hover .menu-content {display: block;}
+body{
+  background-image: url("personal-banking.jpg");
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+s
+}
