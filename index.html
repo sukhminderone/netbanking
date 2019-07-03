@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!--<script src="login.js"></script>-->
   <script src="signup.js"></script>
   <link rel="stylesheet" type="text/css" href="login.css">
@@ -10,9 +16,9 @@
   <div>
 <form  method="post">
 
-  username:<br>
+  E-mail:<br>
   <input type="text" id="username"name="username"placeholder="enter username"required>
-  <br>
+  <br><br>
   password:<br>
   <input type="password" id="password"name="password" placeholder="enter password"required>
   <br><br>
@@ -20,13 +26,14 @@
 </form>
 </div>
 
-  <button  value="login"class="btn" onclick="authenticate();">LOGIN </button>
+  <button  value="login"class="btn btn-primary" onclick="authenticate();">LOGIN </button>
 
-  <div class="signup">
+  <br> <br><!--<div class="signup">-->
   <form action="signup_.html">
-    <input font style="italic"type="submit" value="signup" />
+  <button class ="btn btn-primary"type="submit">SignUp</button>
+
 </form>
-</div>
+<!--</div>
 
 </body>
 </html>
